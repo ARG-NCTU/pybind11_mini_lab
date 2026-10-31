@@ -1,7 +1,5 @@
 # pybind11 Mini Lab：Python 呼叫 C++ 成績分析工具
 
-> 適合大二～大四｜教師講解 **15–18 分鐘**｜學生實作約 **30–45 分鐘**  
-> **只有兩份需要修改的程式：`grade.cpp`、`lab.py`**（不需要 CMake 或額外測試檔）。
 
 ## 這次要做什麼？
 
@@ -86,7 +84,7 @@ python lab.py
 
 開始時看到 `FAIL` 是正常的：因為你還沒填完 TODO；請從 Task 1 依序完成。
 
-## 4. 解題提示（不是解答）
+## 4. Hint
 
 - **Task 1：** `m.def("Python 的函式名稱", &C_plus_plus_函式名稱);`
 - **Task 2：** 記得 `#include <pybind11/stl.h>`；C++ 的 `std::invalid_argument` 在 Python 端會轉為 `ValueError`。
@@ -103,9 +101,8 @@ python lab.py
 | `AttributeError: module 'gradecpp' has no attribute ...` | 先完成對應 `m.def(...)` / `.def(...)`，並 **重新編譯** |
 | 改了 C++，執行結果卻沒更新 | 重新執行第 2 節的兩行編譯指令 |
 
-## 6. 交作業
-
-提交完成 TODO 的 **`grade.cpp` 與 `lab.py`**，並附上 `python lab.py` 出現 `3/3 關通過` 的終端機截圖即可。不需繳交 `.venv` 或 `.so`。
+## 6. DEMO
+給助教DEMO並回答助教的問題
 
 ---
 
